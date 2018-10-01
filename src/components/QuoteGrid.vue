@@ -8,7 +8,12 @@
   import Quote from './Quote.vue';
 
     export default {
-        props: ['quotes'],
+        props: {
+          quotes: {
+            type: Array,
+            required: true
+          }
+        },
         components: {
           appQuote: Quote
         },
