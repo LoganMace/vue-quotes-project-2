@@ -16,7 +16,8 @@
 
 <script>
   export default {
-    props: ['quoteCount', 'maxQuotes']
+    props: {
+      'quoteCount': {type: Number, required: true}, 'maxQuotes': {type: Number, required: true}}
   }
 </script>
 
